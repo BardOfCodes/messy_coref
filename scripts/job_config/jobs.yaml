@@ -1,0 +1,24 @@
+defaults:
+  ngpu: "1"
+  ncpu: "8"
+  memory: "60G"
+  hours: "96:00:00"
+  output_file: "default_output.out"
+  project_path: "/users/aganesh8/data/aganesh8/projects/rl/rl_csg/"
+  script_file: ""
+  args: ""
+jobs:
+- 
+  job_file_name: "job_test.sh"
+  output_file: "job_out/stage_23/ntcsg_demo.out"
+  script_file: "scripts/train_eval.py"
+  pre_args:
+    - "--config-file"
+    - "configs/ablations/upgrade/tf_plad.py"
+-
+  job_file_name: "job_test_2.sh"
+  output_file: "job_out/stage_23/ntcsg_demo_PLAD.out"
+  script_file: "scripts/train_eval.py"
+  pre_args:
+    - "--config-file"
+    - "configs/ablations/upgrade/tf_plad_ablation.py"

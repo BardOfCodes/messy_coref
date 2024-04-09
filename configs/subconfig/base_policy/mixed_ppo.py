@@ -1,0 +1,11 @@
+
+
+from yacs.config import CfgNode as CN
+from .me_ppo import POLICY
+
+POLICY = POLICY.clone()
+POLICY.NORMALIZE_ADVANTAGE = True
+POLICY.ME_C.TYPE = "HindsightAndBaseExpCollector"
+POLICY.ME_T.NORMALIZE_ADVANTAGE = True
+POLICY.ME_T.ENABLE = True
+POLICY.ME_C.ME_BUFFER.EPISODE_BUDGET = 2048

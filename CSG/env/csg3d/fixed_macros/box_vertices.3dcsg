@@ -1,0 +1,30 @@
+union
+    translate(-1, 0,0)
+    union
+        translate(0, -1, 0)
+        union
+            translate(0,0,-1)
+            sphere(0.05)
+            translate(0,0,1)
+            sphere(0.05)
+        translate(0, 1, 0)
+        union
+            translate(0,0,-1)
+            sphere(0.05)
+            translate(0,0,1)
+            sphere(0.05)
+    translate(1, 0,0)
+    union
+        translate(0, -1, 0)
+        union
+            translate(0,0,-1)
+            sphere(0.05)
+            translate(0,0,1)
+            sphere(0.05)
+        translate(0, 1, 0)
+        union
+            translate(0,0,-1)
+            sphere(0.05)
+            translate(0,0,1)
+            sphere(0.05)
+    

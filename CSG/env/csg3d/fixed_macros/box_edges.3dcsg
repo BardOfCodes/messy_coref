@@ -1,0 +1,43 @@
+union
+    rotate(0, 90, 00)
+    union
+        translate(0, -1.0, 0)
+        union
+            translate(-1.0, 0, 0)
+            cylinder(0.05, 1.0)
+            translate(1.0, 0, 0)
+            cylinder(0.05, 1.0)
+        translate(0, 1.0, 0)
+        union
+            translate(-1.0, 0, 0)
+            cylinder(0.05, 1.0)
+            translate(1.0, 0, 0)
+            cylinder(0.05, 1.0)
+    union
+        union
+        translate(0, -1.0, 0)
+        union
+            translate(-1.0, 0, 0)
+            cylinder(0.05, 1.0)
+            translate(1.0, 0, 0)
+            cylinder(0.05, 1.0)
+        translate(0, 1.0, 0)
+        union
+            translate(-1.0, 0, 0)
+            cylinder(0.05, 1.0)
+            translate(1.0, 0, 0)
+            cylinder(0.05, 1.0)
+        rotate(0, 90, 90)
+        union
+            translate(0, -1.0, 0)
+            union
+                translate(-1.0, 0, 0)
+                cylinder(0.05, 1.0)
+                translate(1.0, 0, 0)
+                cylinder(0.05, 1.0)
+            translate(0, 1.0, 0)
+            union
+                translate(-1.0, 0, 0)
+                cylinder(0.05, 1.0)
+                translate(1.0, 0, 0)
+                cylinder(0.05, 1.0)

@@ -1,0 +1,19 @@
+
+
+from yacs.config import CfgNode as CN
+from .base_reward import REWARD
+
+ENV = CN()
+ENV.TYPE = "RestrictedCSG"
+ENV.MODE = "TRAIN"
+ENV.SAMPLING = "RANDOM"
+ENV.PROGRAM_LENGTHS = [3]
+ENV.PROGRAM_PROPORTIONS = [1.0]
+ENV.DYNAMIC_MAX_LEN = False
+# Reward Specs
+ENV.REWARD = REWARD.clone()
+# for BC
+ENV.N_ENVS = 12
+# CAD ENV PARAMETERS
+ENV.CAD_MAX_LENGTH = 3
+ENV.GT_PROGRAM = True

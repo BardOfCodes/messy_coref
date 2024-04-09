@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# Request a GPU partition node and access to 1 GPU
+#SBATCH -p "3090-gcondo" --gres=gpu:$ngpu
+
+# Ensures all allocated cores are on the same node
+#SBATCH -N 1
+
+# Request 1 CPU core
+#SBATCH -n $ncpu
+
+#SBATCH -t $hours
+
+#SBATCH --mem=$memory
+
+#SBATCH -o $output_file
+
+
+# Run program:
+source ~/.bashrc
+module load python/3.8.12_gcc8.3
+module load git
+module load tmux
+module load anaconda/3-5.2.0
+module load gcc/6.2
+conda activate pfrl2 
+cd $project_path
+export PYTHONPATH="$project_path:$$PYTHONPATH"
+python $script_file $args --machine CCV

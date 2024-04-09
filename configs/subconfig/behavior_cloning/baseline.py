@@ -1,0 +1,22 @@
+from yacs.config import CfgNode as CN
+
+BC = CN()
+BC.TYPE = "AdaptedBC"
+BC.ENV = '' # Set it from above.
+# Reward Specs
+BC.BATCH_SIZE = 512
+BC.EPOCHS = 500
+BC.SAVE_EPOCHS = 10
+BC.N_ENVS = 3
+BC.NUM_WORKERS = 4
+BC.N_ITERS = int(5000)
+BC.ENT_WEIGHT = 0.00
+BC.L2_WEIGHT = 0.001
+BC.LOG_INTERVAL = 100
+## Other configs:
+BC.COLLECT_GRADIENTS = False
+BC.GRADIENT_STEP_COUNT = 1
+BC.MAX_GRAD_NORM = 0.5
+BC.LABEL_SMOOTHING = False
+BC.LS_SIZE = 75
+BC.LS_PADDING_IDX = 75

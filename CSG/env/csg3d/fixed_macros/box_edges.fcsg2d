@@ -1,0 +1,7 @@
+union
+    union
+        cuboid(-1, -1, 2, 0.1, 0)
+        cuboid(-1, 1, 2, 0.1, 0)
+    union
+        cuboid(1, -1, 0.1, 2, 0)
+        cuboid(1, 1, 0.1, 2, 0)

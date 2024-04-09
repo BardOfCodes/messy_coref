@@ -1,0 +1,23 @@
+union
+    union
+        union
+            cuboid(0, -1, -1, 2, 0.1, 0.1)
+            cuboid( 0,-1, 1, 2, 0.1, 0.1)
+        union
+            cuboid(0, 1, -1, 2, 0.1, 0.1)
+            cuboid( 0,1, 1, 2, 0.1, 0.1)
+    union
+        union
+            union
+                cuboid(-1, 0, -1, 0.1, 2, 0.1)
+                cuboid(-1, 0, 1, 0.1, 2, 0.1)
+            union
+                cuboid(1, 0, -1, 0.1, 2, 0.1)
+                cuboid(1, 0, 1, 0.1, 2, 0.1)
+        union
+            union
+                cuboid(-1, -1, 0, 0.1, 0.1, 2)
+                cuboid(-1, 1, 0, 0.1, 0.1, 2)
+            union
+                cuboid(1, -1, 0, 0.1, 0.1, 2)
+                cuboid(1, 1, 0, 0.1, 0.1, 2)

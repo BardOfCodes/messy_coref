@@ -1,0 +1,55 @@
+union
+	rotate(0.000, 90.000, 0.000)
+	union
+		translate(0.000, -1.000, 0.000)
+		union
+			translate(-1.000, 0.000, 0.000)
+			scale(0.1, 0.1, 2)
+			cylinder
+			translate(1.000, 0.000, 0.000)
+			scale(0.1, 0.1, 2)
+			cylinder
+		translate(0.000, 1.000, 0.000)
+		union
+			translate(-1.000, 0.000, 0.000)
+			scale(0.1, 0.1, 2)
+			cylinder
+			translate(1.000, 0.000, 0.000)
+			scale(0.1, 0.1, 2)
+			cylinder
+	union
+		union
+			translate(0.000, -1.000, 0.000)
+			union
+				translate(-1.000, 0.000, 0.000)
+				scale(0.1, 0.1, 2)
+				cylinder
+				translate(1.000, 0.000, 0.000)
+				scale(0.1, 0.1, 2)
+				cylinder
+			translate(0.000, 1.000, 0.000)
+			union
+				translate(-1.000, 0.000, 0.000)
+				scale(0.1, 0.1, 2)
+				cylinder
+				translate(1.000, 0.000, 0.000)
+				scale(0.1, 0.1, 2)
+				cylinder
+		rotate(0.000, 90.000, 90.000)
+		union
+			translate(0.000, -1.000, 0.000)
+			union
+				translate(-1.000, 0.000, 0.000)
+				scale(0.1, 0.1, 2)
+				cylinder
+				translate(1.000, 0.000, 0.000)
+				scale(0.1, 0.1, 2)
+				cylinder
+			translate(0.000, 1.000, 0.000)
+			union
+				translate(-1.000, 0.000, 0.000)
+				scale(0.1, 0.1, 2)
+				cylinder
+				translate(1.000, 0.000, 0.000)
+				scale(0.1, 0.1, 2)
+				cylinder
